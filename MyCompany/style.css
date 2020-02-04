@@ -1,0 +1,825 @@
+*{
+     padding: 0;
+     margin: 0;
+}
+a{
+     text-decoration: none;
+}
+li{
+     list-style: none;
+}
+body{
+     
+     font-family: 'Open Sans', sans-serif;
+}
+
+header{
+     width: 100%;
+     background-color: black;
+     display: flex;
+     padding-bottom: 20px;
+}
+
+.header_logo{
+     text-transform: uppercase;
+     color: white;
+     font-size: 24px;
+     font-weight: 800;
+     margin-left: 12.1%;
+     padding-top: 57px;
+     cursor: pointer;
+}
+
+.topnav{
+     margin-left: 29.3%;
+     padding-top: 57px;
+}
+
+.topnav a{
+     padding-right: 37px;
+     text-transform: uppercase;
+     color: white;
+     font-size: 14px;
+     font-weight: 700;
+     padding-bottom: 20px;
+}
+
+.topnav a span{
+     padding-bottom: 13px;
+}
+
+.topnav a span:hover{
+     border-bottom: 3px solid #fcac45;
+}
+
+.topnav .menu{
+     display: none;
+}
+
+main{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+}
+
+.main_welcome{
+     display: flex;
+     height: 687px;
+     background-color: black;
+     color: white;
+     justify-content: center;
+     align-items: center;
+}
+
+.main_welcome > div{
+     text-align: center;
+}
+
+.main_welcome h1{
+     font-weight: 300;
+     font-size: 44px;
+     color: #5f5f5f;
+}
+
+.main_welcome .mycompany{
+     font-weight: 700;
+     color: #fcac45;
+}
+
+.main_welcome p{
+     font-size: 20px;
+     color: #aeaeae;
+}
+
+.wrapper{
+     width: 76.2%;
+     margin: 0 auto;
+}
+
+.main_about{
+     display: flex;
+     padding: 103px 0 101px;
+}
+
+.about_right{
+     margin-left: 174px;
+}
+
+.about_right h2{
+     line-height: 74px;
+     padding-bottom: 20px;
+     display: inline;
+     font-size: 34px;
+     font-weight: 400;
+     border-bottom: 4px solid #fcac45;
+}
+
+.about_right p{
+     margin-top: 31px;
+     margin-bottom: 49px;
+     color: #8f8f8f;
+     font-size: 18px;
+}
+
+.about_right ul{
+     color: #8f8f8f;
+     font-size: 16px;
+     font-style: italic;
+}
+
+.about_right ul b{
+     font-style: normal;
+     font-size: 18px;
+}
+
+.about_right li{
+     background: url(./img/21.png) 0px no-repeat;
+     padding-left: 25px;
+     margin-bottom: 20px;
+}
+
+
+.main_team{
+     background-color: black;
+     color: white;
+     padding: 100px 0 167px;
+     text-align: center;
+}
+
+.main_team h2{
+     font-size: 44px;
+     font-weight: 600;
+     padding-bottom: 30px;
+}
+
+.line{
+     width: 98px;
+     height: 4px;
+     background-color: #ff9933;
+     margin: 0 auto 106px;
+}
+
+.card > .photo{
+     border-radius: 90rem;
+     background-color: #d7d7d7;
+     height: 128px;
+     width: 128px;
+     margin: 0 auto 20px;
+}
+
+.card:not(:first-child){
+     padding-left: 46px;
+}
+
+.team__cards{
+     display: flex;
+}
+
+.main_team > .wrap{
+     width: 75.1%;
+     margin: 0 auto;
+}
+
+.main_team .name{
+     font-size: 20px;
+     font-weight: 700;
+}
+
+.main_team .position{
+     font-size: 16px;
+     padding-bottom: 39px;
+     padding-top: 6px;
+}
+
+.main_team .about__position{
+     font-size: 14px;
+}
+
+
+.main__services{
+     text-align: center;
+     margin: 101px 0;
+}
+
+.services__cards .services__card > h4{
+     text-transform: uppercase;
+     font-size: 25px;
+     font-weight: 600;
+}
+
+.services__cards{
+     text-align: center;
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+     grid-column-gap: 50px;
+}
+
+.main__services h2{
+     margin-bottom: 30px;
+     font-size: 44px;
+     font-weight: 600;
+}
+
+.main__services .line{
+     margin-bottom: 56px;
+}
+
+.main__services .about__our__services{
+     margin-bottom: 102px;
+     color: #afafaf;
+     font-size: 16px;
+}
+
+.services__card h4{
+     padding-top: 28px;
+     padding-bottom: 20px;
+     font-size: 25px;
+     font-weight: 600;
+}
+
+.services__card p{
+     font-size: 14px;
+}
+
+
+.main__clients{
+     background-color: black;
+     color: white;
+     padding: 100px 0 212px;
+     text-align: center;
+}
+
+.main__clients .line{
+     margin-top: 30px;
+     margin-bottom: 113px;
+}
+
+.main__clients h4{
+     font-size: 44px;
+     font-weight: 300;
+}
+
+.main__clients h4 b{
+     font-weight: 600;
+}
+
+.main__clients .clients{
+     display: grid;
+     grid-template-columns: auto auto auto auto auto;
+     grid-template-areas: "client1 client2 client3 client4 client5";
+     grid-column-gap: 32px;
+}
+
+.main__clients .client{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.main__clients .client:nth-child(1){
+     grid-area: client1;
+}
+
+.main__clients .client:nth-child(2){
+     grid-area: client2;
+}
+
+.main__clients .client:nth-child(3){
+     grid-area: client3;
+}
+
+.main__clients .client:nth-child(4){
+     grid-area: client4;
+}
+
+.main__clients .client:nth-child(5){
+     grid-area: client5;
+}
+
+
+.main__testimonials{
+     background-color: black;
+     color: white;
+     text-align: center;
+     padding: 100px 0 175px;
+}
+
+.wrapper h4{
+     text-transform: uppercase;
+     font-size: 44px;
+     font-weight: 300;
+     margin-bottom: 25px;
+}
+
+.wrapper h4 b{
+     font-weight: 600;
+}
+
+.main__testimonials .author{
+     margin-top: 52px;
+     font-size: 18px;
+     font-weight: 300;
+}
+
+.main__testimonials .text{
+     font-weight: 600;
+     font-size: 18px;
+}
+
+.main__testimonials .author b{
+     font-weight: 600;
+}
+
+
+.main__our__work{
+     background-color: white;
+     color: black;
+     text-align: center;
+     padding: 100px 0;
+}
+
+.main__our__work p i{
+     color: #9a9a9a;
+}
+
+.photos img{
+     width: 200px;
+}
+
+.photos img:hover{
+     opacity: 0.9;
+     cursor: pointer;
+}
+
+.photos .line3,.line2{
+     margin-top: 30px;
+}
+
+.photos .line1{
+     margin-top: 180px;
+}
+
+.photos .line1 img:not(:first-child){
+     margin-left: 32px;
+}
+
+.photos .line2 img:not(:first-child){
+     margin-left: 32px;
+}
+
+.photos .line3 img:not(:first-child){
+     margin-left: 32px;
+}
+
+
+.main__contact{
+     padding: 100px 0;
+     text-align: center;
+     background-color: #fff;
+     color: black;
+}
+
+.main__contact p i{
+     color: #9a9a9a;
+}
+
+.red{
+     color:red;
+}
+
+.main__contact input{
+     width: 95%;
+     height: 40px;
+     font-size: 20px;
+}
+
+.main__contact .email input{
+     width: 99%;
+}
+
+.main__contact textarea{
+     width: 99.7%;
+     height: 166px;
+     font-size: 20px;
+}
+
+.main__contact form{
+     display: grid;
+     grid-template-columns: auto auto;
+     grid-template-rows: auto auto auto;
+     grid-template-areas: 
+          "name email"
+          "message message"
+          ". button__block";
+     grid-column-gap: auto;
+     grid-row-gap: 30px;
+     margin-top: 95px;
+}
+
+.main__contact .name{
+     display: flex;
+     align-items: flex-start;
+     flex-direction: column;
+     grid-area: name;
+}
+
+.main__contact .email{
+     display: flex;
+     align-items: flex-end;
+     flex-direction: column;
+     grid-area: email;
+}
+
+.main__contact .email .wrap{     
+     width: 95%;
+     display: flex;
+     align-items: flex-start;
+     flex-direction: column;
+     grid-area: email;
+}
+
+.main__contact .message{
+     display: flex;
+     align-items: flex-start;
+     flex-direction: column;
+     grid-area: message;
+}
+
+.main__contact .button__block{
+     display: flex;
+     align-items: flex-end;
+     flex-direction: column;
+     grid-area: button__block;
+}
+
+.main__contact .button__block input{
+     background-color: #fcac45;
+     color: white;
+     width: 165px;
+     height: 40px;
+}
+
+
+footer{
+     background-color: #222;
+     padding: 31px 0 30px;
+     text-align: center;
+}
+
+footer .wrapper{
+     width: 100%;
+     padding: 0;
+}
+
+footer img:not(:first-child){
+     margin-left: 14px;
+}
+
+
+@media screen and (max-width: 1335px){
+     .topnav{
+          margin-left: 25%;
+     }
+}
+
+
+@media screen and (max-width: 1263px){
+     .main__clients .clients{
+          grid-template-columns: auto auto auto auto;
+          grid-template-rows: auto auto;
+          grid-template-areas: 
+               "client1 client2 client3 client4"
+               "client5 client5 client5 client5";
+          grid-row-gap: 30px;
+     }
+}
+
+
+@media screen and (max-width: 1242px){
+     .topnav{
+          margin-left: 20%;
+     }
+
+     .photos .line1 img:last-child{
+          display: none;
+     }
+
+     .photos .line2 img:last-child{
+          display: none;
+     }
+
+     .photos .line3 img:last-child{
+          display: none;
+     }
+}
+
+
+@media screen and (max-width: 1151px){
+     .topnav{
+          margin-left: 15%;
+     }
+
+     .main_about{
+          flex-direction: column;
+          text-align: center;
+     }
+
+     .about_right{
+          margin-left: 0;
+     }
+
+     .about_right li{
+          text-align: left;
+     }
+
+     
+     .about_left .mac{
+          max-width: 100%;
+     }
+
+     .services__cards{
+          grid-template-columns: auto auto;
+          grid-row-gap: 50px;
+     }
+}
+
+
+@media screen and (max-width: 1069px){
+     .topnav{
+          margin-left: 10%;
+     }
+
+     .team__cards{
+          flex-wrap: wrap;
+     }
+
+     .team__cards > .card{
+          width: 45%;
+     }
+
+     .card:not(:first-child){
+          padding-left: 0;
+     }
+
+     .card:nth-child(n+3){
+          padding-top: 40px;
+     }
+
+     .card:nth-child(even){
+          margin-left: auto;
+     }
+
+     .main__clients .clients{
+          grid-template-columns: auto auto auto auto auto auto;
+          grid-template-rows: auto auto;
+          grid-template-areas: 
+               "client1 client1 client2 client2 client3 client3"
+               "client4 client4 client4 client5 client5 client5";
+     }
+
+     .main__clients .client:nth-child(3n+1){
+          justify-content: flex-end;
+     }
+
+     .main__clients .client:nth-child(2n+3){
+          justify-content: flex-start;
+     }
+}
+
+
+@media screen and (max-width: 1001px){
+     .header_logo{
+          margin-left: 5%;
+     }
+
+     .topnav{
+          margin-left: 5%;
+     }
+     
+     .about_right h2{
+          font-size: 25px;
+     }
+}
+
+
+@media screen and (max-width: 900px){
+     .photos .line1 img:nth-child(3){
+          display: none;
+     }
+
+     .photos .line2 img:nth-child(3){
+          display: none;
+     }
+
+     .photos .line3 img:nth-child(3){
+          display: none;
+     }
+}
+
+
+@media screen and (max-width: 883px){
+     .topnav a{
+          display: none;
+     }
+
+     .topnav .menu{
+          float: right;
+          display: block;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 700;
+     }
+
+     .topnav{
+          width: 100%;
+     }
+
+     .topnav.responsive{
+          position: relative;
+          top: 50px;
+     }
+
+     .topnav.responsive .menu{
+          position: absolute;
+          top: 17px;
+     }
+
+     .topnav.responsive a{
+          float: none;
+          display: block;
+          text-align: left;
+          padding-bottom: 20px;;
+     }
+
+     .topnav.responsive a span{
+          padding-bottom: 7px;;
+     }
+
+     .main__clients .clients{
+          grid-template-columns: auto auto;
+          grid-template-rows: auto auto auto;
+          grid-template-areas: 
+               "client1 client2"
+               "client3 client4"
+               "client5 client5";
+     }
+
+     .main__clients .client:nth-child(2n){
+          justify-content: flex-start;
+     }
+
+     .main__clients .client:nth-child(2n+1){
+          justify-content: flex-end;
+     }
+
+     .main__clients .client:last-child{
+          justify-content: center;
+     }
+}
+
+
+@media screen and (max-width: 700px){
+     .main__contact form{
+          grid-template-columns: auto;
+          grid-template-rows: auto auto auto auto;
+          grid-template-areas: 
+               "name"
+               "email"
+               "message"
+               "button__block";
+     }
+
+     .main__contact input{
+          width: 99.5%;
+     }
+     
+     .main__contact .email input{
+          width: 99.5%;
+     }
+
+     .main__contact .email .wrap{     
+          width: 100%;
+     }
+}
+
+
+@media screen and (max-width: 589px){
+     .photos .line1 img:nth-child(2){
+          display: none;
+     }
+
+     .photos .line2 img:nth-child(2){
+          display: none;
+     }
+
+     .photos .line3 img:nth-child(2){
+          display: none;
+     }
+}
+
+
+
+@media screen and (max-width: 554px){
+     .services__cards{
+          grid-template-columns: auto;
+     }
+}
+
+@media screen and (max-width: 500px){
+     .team__cards > .card{
+          width: 100%;
+     }
+
+     .team__cards{
+          flex-direction: column;
+     }
+
+     .card:not(:first-child){
+          padding-left: 0;
+          padding-top: 40px;
+     }
+
+     .main__clients .clients{
+          grid-template-columns: auto;
+          grid-template-rows: auto auto auto auto auto;
+          grid-template-areas: 
+               "client1"
+               "client2"
+               "client3"
+               "client4"
+               "client5";
+     }
+
+     .main__clients .client:nth-child(n){
+          justify-content: center;
+     }
+}
+
+
+@media screen and (max-width: 410px){
+     .main_welcome h1{
+          font-size: 20px;
+     }
+
+     .about_right h2{
+          font-size: 20px;
+     }
+
+     .main__services h2{
+          font-size: 30px;
+     }
+
+     .wrapper h4{
+          font-size: 30px;
+     }
+}
+
+
+@media screen and (max-width: 283px){
+     header{
+          display: block;
+     }
+
+     .topnav.responsive{
+          position: relative;
+          top: 0;
+     }
+
+     .topnav.responsive a:not(:last-child){
+          position: relative;
+          top: 50px;
+     }
+
+     .topnav.responsive .menu{
+          position: absolute;
+          top: 17px;
+     }
+
+     .topnav .menu{
+          background-color: black;
+          float: none;
+     }
+
+     .topnav{
+          width: auto;
+          display: block;
+          padding-top: 20px;
+          background-color: black;
+     }
+
+     .main__services h2{
+          font-size: 20px;
+     }
+
+     .wrapper h4{
+          font-size: 20px;
+     }
+
+     .photos img{
+          max-width: 80%;
+     }
+
+     footer img:not(:first-child){
+          margin-left: 4px;
+     }
+}
