@@ -173,7 +173,7 @@ header a{
      text-align: center;
 }
 
-.portfolio h2{
+.portfolio h2, .clients h2{
      display: inline-block;
      background-color: #424147;
      color: #ffea00;
@@ -182,14 +182,14 @@ header a{
      text-transform: uppercase;
 }
 
-.portfolio .wrap > p{
+.portfolio .wrap > p, .clients .wrap > p{
      margin-top: 33px;
      font-size: 16px;
      padding-bottom: 25px;
      color: #424146;
 }
 
-.portfolio .wrap{
+.portfolio .wrap, .clients .wrap{
      display: block;
 }
 
@@ -221,6 +221,13 @@ header a{
 }
 
 
+.clients{
+     text-align: center;
+     padding-bottom: 120px;
+     background-color: #f6f6f6;
+}
+
+
 @media screen and (max-width: 1227px){
      .cards{
           grid-template-columns: 223.44px 223.44px;
@@ -238,28 +245,7 @@ header a{
 }
 
 
-@media screen and (max-width: 700px){
-     .posts{
-          grid-template-columns: 1fr 1fr;
-     }
-}
-
-
-@media screen and (max-width: 587px){
-     .cards{
-          grid-template-columns: 223.44px;
-     }
-}
-
-
-@media screen and (max-width: 500px){
-     .posts{
-          grid-template-columns: 1fr;
-     }
-}
-
-
-@media screen and (max-width: 420px){
+@media screen and (max-width: 900px){
      header .wrap{
           width: 100%;
           display: flex;
@@ -324,4 +310,142 @@ header a{
           padding: 0;
      }
 
+     .main__title h2{
+          font-size: calc(4.4vw);
+     }
+
+     .main__title p{
+          font-size: calc(3.4vw - 10px);
+     }
+}
+
+
+footer > .info{
+     background-color: #414146;
+     color: white;
+}
+
+footer > .menu{
+     background-color: black;
+     color: white;
+     font-size: 16px;
+     padding: 27px 0 30px;
+     display: flex;
+     justify-content: center;
+}
+
+footer > .menu div:not(:first-child){
+     padding-left: 80px;
+     cursor: pointer;
+}
+
+
+@media screen and (max-width: 700px){
+     .posts{
+          grid-template-columns: 1fr 1fr;
+     }
+
+     .main__title h2{
+          font-size: calc(5.4vw);
+     }
+
+     .main__title p{
+          font-size: calc(4.4vw - 10px);
+     }
+}
+
+
+@media screen and (max-width: 587px){
+     .cards{
+          grid-template-columns: 223.44px;
+     }
+
+     .posts{
+          grid-template-columns: 1fr 1fr;
+     }
+
+     .main__title h2{
+          font-size: 6vw;
+     }
+
+     .main__title p{
+          font-size: calc(5vw - 10px);
+     }
+}
+
+
+@media screen and (max-width: 500px){
+     .posts{
+          grid-template-columns: 1fr;
+     }
+}
+
+@media screen and (max-width: 450px){
+     body{
+          margin: 0;
+     }
+
+     .main__title h2{
+          font-size: 21px;
+     }
+
+     .main__title p{
+          font-size: 14px;
+     }
+
+     .main__title p, .main__title h2{
+          margin-left: 0;
+          text-align: center;
+     }
+
+     .main__title .wrap{
+          text-align: center;
+     }
+
+     .specialize h2{
+          font-size: 20px;
+          padding-bottom: 27px;
+     }
+     
+     .specialize > .wrap > p{
+          font-size: 13px;
+     }
+}
+
+@media screen and (max-width: 280px){
+     .main__title h2{
+          font-size: 20px;
+     }
+
+     .main__title p{
+          font-size: 13px;
+     }
+
+     .logo img{
+          max-width: 30vw;
+     }
+
+     .cards{
+          grid-template-columns: 60vw;
+     }
+
+     .card:first-child  .bottomcard p{
+          font-size: 13px;
+     }
+
+     .posts {
+          grid-template-columns: 60vw;
+          justify-content: center;
+     }
+}
+
+@media screen and (max-width: 244px){
+     .main__title h2{
+          font-size: 18px;
+          padding: 0 5px;
+     }
+
+     .main__title p{
+          padding: 0;
+     }
 }
