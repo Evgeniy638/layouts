@@ -144,7 +144,7 @@ header a{
 
 .card:first-child img{
      height: 200px;
-     max-width: 100%;
+     width: 100%;
 }
 
 .card:not(:first-child) .bottomcard p{
@@ -228,12 +228,202 @@ header a{
 }
 
 
+footer > .info{
+     background-color: #414146;
+     color: white;
+     padding: 30px 0 31px;
+}
+
+footer > .info > .wrap{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(6, 1fr);
+}
+
+footer > .info > .wrap > .about__us{
+     grid-row: 1 / 4;
+     padding-right: 10px;
+     padding-bottom: 44px;
+}
+
+footer > .info > .wrap > .tweets{
+     grid-row: 1 / 6;
+     padding-right: 10px;
+}
+
+footer > .info > .wrap > .contact__info{
+     grid-row: 1 / 4;
+}
+
+footer > .info > .wrap > .photo__stream{
+     grid-row: 4 / 7;
+     padding-right: 10px;
+}
+
+footer > .info > .wrap > .social__connecting{
+     display: flex;
+     grid-row: 6 / 7;
+     padding-right: 10px;
+}
+
+footer > .info > .wrap > .follow__us{
+     grid-row: 4 / 6;
+     font-size: 0;
+}
+
+footer > .info > .wrap h2{
+     font-size: 18px;
+     font-weight: 400;
+}
+
+footer > .info > .wrap > .about__us h2{
+     padding-bottom: 30px;
+}
+
+footer > .info > .wrap > .tweets h2{
+     padding-bottom: 37px;
+}
+
+footer > .info > .wrap > .contact__info h2{
+     padding-bottom: 52px;
+}
+
+footer > .info > .wrap > .photo__stream h2, 
+footer > .info > .wrap > .follow__us h2{
+     padding-bottom: 24px;
+}
+
+footer > .info > .wrap > .social__connecting h2{
+     padding-right: 10px;
+}
+
+footer > .info > .wrap .yellow{
+     color: #ffea00;
+}
+
+footer > .info > .wrap p{
+     font-size: 13px;
+}
+
+footer > .info > .wrap > .about__us button{
+     font-size: 15px;
+     background-color: black;
+     color: white;
+     border: none;
+     border-bottom: 2px solid #ffea00;
+     padding: 13px 18px 13px 16px;
+     margin-top: 32px;
+}
+
+footer > .info > .wrap > .about__us button:focus{
+     outline: none;
+}
+
+footer > .info > .wrap > .tweets .tweet{
+     display: grid;
+     grid-template-columns: 45px auto;
+     grid-column: 36px auto;
+     margin-bottom: 14px;
+}
+
+footer > .info > .wrap > .tweets .tweet .date{
+     font-size: 8px;
+     color: #ffea00;
+     grid-column: 2 / 3;
+     padding-top: 5px;
+}
+
+footer > .info > .wrap > .contact__info .container div{
+     display: grid;
+     grid-template-rows: auto;
+     margin-bottom: 20px;
+}
+
+footer > .info > .wrap > .contact__info .container div:not(:nth-child(2)){
+     grid-template-columns: 47px 1fr;
+}
+
+footer > .info > .wrap > .contact__info .container div:nth-child(2){
+     grid-template-columns: 47px 52px auto;
+}
+
+footer > .info > .wrap > .follow__us input{
+     background-color: inherit;
+     border: none;
+     border-bottom: 2px solid #ffea00;
+     padding: 0 4px 3px 4px;
+     color: white;
+     font-size: 16px;
+}
+
+footer > .info > .wrap > .follow__us input:focus{
+     outline: none;
+}
+
+footer > .info > .wrap > .follow__us button{
+     border: none;
+     height: 28px;
+     width: 28px;
+     position: relative;
+     left:-1px;
+     bottom: -9px;
+}
+
+footer > .info > .wrap > .follow__us button:focus{
+     outline: none;
+}
+
+
+footer > .menu{
+     background-color: black;
+     font-size: 16px;
+     padding: 27px 0 30px;
+     display: flex;
+     justify-content: center;
+}
+
+footer > .menu a{
+     color: white;
+}
+
+footer > .menu li:not(:first-child){
+     margin-left: 80px;
+}
+
+footer > .menu div{
+     cursor: pointer;
+}
+
+footer > .menu #footer_menu{
+     display: none;
+}
+
 @media screen and (max-width: 1227px){
      .cards{
           grid-template-columns: 223.44px 223.44px;
           grid-template-rows: 1fr 1fr;
           grid-row-gap: 54px;
           align-self: center;
+     }
+}
+
+
+@media screen and (max-width: 1044px){
+     footer > .info > .wrap{
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(9, 1fr);
+     }
+
+     footer > .info > .wrap > .contact__info{
+          padding-top: 40px;
+          grid-column: 1;
+          grid-row: 7 / 10;
+          padding-right: 10px;
+     }
+
+     footer > .info > .wrap > .follow__us{
+          grid-row: 7 / 9;
+          grid-column: 2;
      }
 }
 
@@ -319,24 +509,59 @@ header a{
      }
 }
 
-
-footer > .info{
-     background-color: #414146;
-     color: white;
+@media screen and (max-width: 719px){
+     footer > .menu{
+          padding: 27px 0 30px;
+          display: flex;
+          justify-content: center;
+     }
+     
+     footer > .menu li:not(:first-child){
+          margin-left: 10px;
+     }
 }
 
-footer > .menu{
-     background-color: black;
-     color: white;
-     font-size: 16px;
-     padding: 27px 0 30px;
-     display: flex;
-     justify-content: center;
-}
 
-footer > .menu div:not(:first-child){
-     padding-left: 80px;
-     cursor: pointer;
+@media screen and (max-width: 712px){
+     footer > .info > .wrap{
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(6, auto);
+          justify-content: center;
+     }
+
+     footer > .info > .wrap > div{
+          width: 83.9vw;
+          margin: 0 auto;
+     }
+     
+     footer > .info > .wrap > .about__us{
+          grid-row: auto;
+          padding-right: 0;
+     }
+     
+     footer > .info > .wrap > .tweets{
+          grid-row: auto;
+          padding-right: 0;
+     }
+     
+     footer > .info > .wrap > .contact__info{
+          grid-row: auto;
+     }
+     
+     footer > .info > .wrap > .photo__stream{
+          grid-row: auto;
+          padding-right: 0;
+     }
+     
+     footer > .info > .wrap > .social__connecting{
+          padding: 30px 0;
+          grid-row: auto;
+     }
+     
+     footer > .info > .wrap > .follow__us{
+          grid-row: auto;
+          grid-column: 1;
+     }
 }
 
 
@@ -409,6 +634,32 @@ footer > .menu div:not(:first-child){
      
      .specialize > .wrap > p{
           font-size: 13px;
+     }
+}
+
+
+@media screen and (max-width: 387px){
+     footer > .menu ul{
+          display: none;
+     }
+
+     .footer_menu_button::after{
+          content: attr(data-open);
+          color: white;
+          cursor: pointer;
+     }
+
+     #footer_menu:checked + nav .footer_menu_button::after{
+          content: attr(data-close);
+     }
+
+     #footer_menu:checked + nav ul{
+          display: flex;
+          flex-direction: column;
+     }
+
+     footer > .menu li:not(:first-child){
+          margin-left: 0;
      }
 }
 

@@ -192,6 +192,57 @@
                          </p>             
                          <button>Learn more</button>                         
                     </div>
+
+                    <div class="tweets">
+                         <h2>Latest tweets</h2>
+                         <div class="container">
+                              <div class="tweet">
+                                   <img src="./img/Twitter birs icon.png" alt="">
+                                   <p>Check Out Dtbaker's <span class="yellow">@Arduino</span> Sales Notification <span class="yellow">#System</span></p>
+                                   <p class="date">3 days ago</p>
+                              </div>
+                              <div class="tweet">
+                                   <img src="./img/Twitter birs icon.png" alt="">
+                                   <p>Community Superstar Winner – <span class="yellow">#OrganicBeeMedia</span></p>
+                                   <p class="date">3 days ago</p>
+                              </div>
+                              <div class="tweet">
+                                   <img src="./img/Twitter birs icon.png" alt="">
+                                   <p>Clean <span class="yellow">#Websites</span> Designs for Your <span class="yellow">#Inspiration</span></p>
+                                   <p class="date">5 days ago</p>
+                              </div>
+                              <div class="tweet">
+                                   <img src="./img/Twitter birs icon.png" alt="">
+                                   <p>Cute Online <span class="yellow">#Shops</span></p>
+                                   <p class="date">6 days ago</p>
+                              </div>
+                              <div class="tweet">
+                                   <img src="./img/Twitter birs icon.png" alt="">
+                                   <p>Download 40 vector <span class="yellow">#icons</span> package for <span class="yellow">#FREE</span></p>
+                                   <p class="date">6 days ago</p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="contact__info">
+                         <h2>Contact info</h2>
+                         <div class="container">
+                              <div>
+                                   <img src="./img/Adress.png" alt="">
+                                   <p>Address: 12569 Saint Patrick des Prés, 
+                                        85000 Paris, France</p>
+                              </div>
+                              <div>
+                                   <img src="./img/Phone.png" alt="">
+                                   <p>Phone: </p>
+                                   <p>+38 045 845-45-78<br>+38 045 845-45-79</p>
+                              </div>
+                              <div>
+                                   <img src="./img/email.png" alt="">
+                                   <p>E-mail: <span class="yellow">freeforwebdesign@gmail.com</span></p>
+                              </div>
+                         </div>
+                    </div>
      
                     <div class="photo__stream">
                          <h2>Photo stream</h2>
@@ -205,37 +256,6 @@
                          </div>
                     </div>
      
-                    <div class="tweets">
-                         <h2>Latest tweets</h2>
-                         <div class="container">
-                              <div class="tweet">
-                                   <img src="./img/Twitter birs icon.png" alt="">
-                                   <p>Check Out Dtbaker's @Arduino Sales Notification #System</p>
-                                   <p class="date">3 days ago</p>
-                              </div>
-                              <div class="tweet">
-                                   <img src="./img/Twitter birs icon.png" alt="">
-                                   <p>Community Superstar Winner – #OrganicBeeMedia</p>
-                                   <p class="date">3 days ago</p>
-                              </div>
-                              <div class="tweet">
-                                   <img src="./img/Twitter birs icon.png" alt="">
-                                   <p>Clean #Websites Designs for Your #Inspiration</p>
-                                   <p class="date">5 days ago</p>
-                              </div>
-                              <div class="tweet">
-                                   <img src="./img/Twitter birs icon.png" alt="">
-                                   <p>Cute Online #Shops</p>
-                                   <p class="date">6 days ago</p>
-                              </div>
-                              <div class="tweet">
-                                   <img src="./img/Twitter birs icon.png" alt="">
-                                   <p>Download 40 vector #icons package for #FREE</p>
-                                   <p class="date">6 days ago</p>
-                              </div>
-                         </div>
-                    </div>
-     
                     <div class="social__connecting">
                          <h2>Social connecting</h2>
                          <div>
@@ -245,41 +265,28 @@
                          </div>
                     </div>
      
-                    <div class="contact__info">
-                         <h2>Contact info</h2>
-                         <div class="container">
-                              <div>
-                                   <img src="./img/Adress.png" alt="">
-                                   <p>Address: 12569 Saint Patrick des Prés, 
-                                        85000 Paris, France</p>
-                              </div>
-                              <div>
-                                   <img src="./img/Phone.png" alt="">
-                                   <p>Phone: +38 045 845-45-78</p>
-                                   <p>+38 045 845-45-79</p>
-                              </div>
-                              <div>
-                                   <img src="./img/email.png" alt="">
-                                   <p>E-mail: freeforwebdesign@gmail.com</p>
-                              </div>
-                         </div>
-                    </div>
-     
                     <div class="follow__us">
                          <h2>Follow us</h2>
                          <p>Lorem Ipsum is simply dummy text of the printing 
                               and typesetting industry.</p>
                          <input type="text" name="follow" id="">
-                         <button name="follow"><img src="./img/email icon.png" alt=""></button>
+                         <button name="follow"><img src="./img/email icon.png" alt="" width="28" height="28"></button>
                     </div>
                </div>
           </section>
           <section class="menu">
-               <div>home</div>
-               <div>portfolio</div>
-               <div>blog</div>
-               <div>about us</div>
-               <div>contact</div>
+               <input type="checkbox" id="footer_menu">
+               <nav>
+                    <label for="footer_menu" class="footer_menu_button"
+                         data-open="menu" data-close="close"></label>
+                    <ul>
+                         <li><a href="#">home</a></li>
+                         <li><a href="#">portfolio</a></li>
+                         <li><a href="#">blog</a></li>
+                         <li><a href="#">about  us</a></li>
+                         <li><a href="#">contact</a></li>
+                    </ul>
+               </nav>
           </section>
      </footer>
 
@@ -287,7 +294,6 @@
           src="https://code.jquery.com/jquery-3.4.1.min.js"
           integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
           crossorigin="anonymous"></script>
-     <script src="jquery.min.js"></script>
      <script src="owlcarousel/owl.carousel.min.js"></script>
      <script src="script.js"></script>
 </body>
