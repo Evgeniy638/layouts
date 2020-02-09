@@ -1,16 +1,35 @@
-$(function(){
-     $('.toggles button').click(function(){
-          let id = this.id
-          let currents = $('.post.' + id)
+(() => {
+     //кнопки для фильтрации портфолио
 
-          $('.post').not(currents).hide(500)
-          currents.show(500)
+     let togglesButtons = document.querySelectorAll('.toggles button')
+
+     togglesButtons.forEach((button) => {
+          button.addEventListener("click", ((id) => () => {
+               let posts = document.querySelectorAll('.post')
+
+               posts.forEach((post) => {
+                    if (!post.classList.contains(id)){
+                         post.style.display = "none"
+                    }
+               })
+
+               let currents = document.querySelectorAll(`.post.${id}`)
+
+               currents.forEach((current) => {
+                    current.style.display = "block"
+               })
+
+          })(button.id))
      })
 
-     $('#showall').click(()=>{
-          $('.post').show(500)
+     let showall = document.getElementById('showall')
+
+     showall.addEventListener('click', () => {
+          document.querySelectorAll('.post').forEach((post) => {
+               post.style.display = "block"
+          })
      })
-})
+})()
 
 $(document).ready(function(){
      $(".owl-carousel").owlCarousel({
